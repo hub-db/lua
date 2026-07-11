@@ -2,14 +2,11 @@
 -- Version: 3.2
 
 -- Instances:
-
-local PlayerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
+local PlayerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
 local finmdi =  PlayerGui:FindFirstChild("executor")
 if finmdi then
 	finmdi:Destroy()
 end
-wait(0.01)
 local executor = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local exe = Instance.new("TextButton")
@@ -21,7 +18,6 @@ local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
 local close = Instance.new("TextButton")
 local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
 local Exetext = Instance.new("TextBox")
-
 
 --Properties:
 
@@ -128,7 +124,7 @@ end
 
 -- Scripts:
 
-local function EECSQ_fake_script() -- close.LocalScript 
+local function SBLGYIX_fake_script() -- close.ZTU 
 	local script = Instance.new('LocalScript', close)
 	local req = require
 	local require = function(obj)
@@ -144,8 +140,8 @@ local function EECSQ_fake_script() -- close.LocalScript
 	end)
 	
 end
-coroutine.wrap(EECSQ_fake_script)()
-local function LYRGL_fake_script() -- main.LocalScript 
+coroutine.wrap(SBLGYIX_fake_script)()
+local function YQUH_fake_script() -- main.RGT 
 	local script = Instance.new('LocalScript', main)
 	local req = require
 	local require = function(obj)
@@ -168,13 +164,14 @@ local function LYRGL_fake_script() -- main.LocalScript
 	
 	local function execute()
 		loadstring(edh)()
+		print("Executed")
 	end
 	
 	clear.MouseButton1Click:Connect(clearText)
 	exe.MouseButton1Click:Connect(execute)
 end
-coroutine.wrap(LYRGL_fake_script)()
-local function LLKNP_fake_script() -- main.Smooth GUI Dragging 
+coroutine.wrap(YQUH_fake_script)()
+local function YPITKA_fake_script() -- main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', main)
 	local req = require
 	local require = function(obj)
@@ -240,4 +237,4 @@ local function LLKNP_fake_script() -- main.Smooth GUI Dragging
 	runService.Heartbeat:Connect(Update)
 	
 end
-coroutine.wrap(LLKNP_fake_script)()
+coroutine.wrap(YPITKA_fake_script)()
