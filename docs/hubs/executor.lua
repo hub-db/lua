@@ -3,10 +3,13 @@
 
 -- Instances:
 local PlayerGui = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-local finmdi =  PlayerGui:FindFirstChild("executor")
+local finmdi = PlayerGui:FindFirstChild("executor")
 if finmdi then
 	finmdi:Destroy()
+else 
+	
 end
+
 local executor = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local exe = Instance.new("TextButton")
@@ -124,7 +127,7 @@ end
 
 -- Scripts:
 
-local function SBLGYIX_fake_script() -- close.ZTU 
+local function VMYWW_fake_script() -- close.ZTU 
 	local script = Instance.new('LocalScript', close)
 	local req = require
 	local require = function(obj)
@@ -140,8 +143,8 @@ local function SBLGYIX_fake_script() -- close.ZTU
 	end)
 	
 end
-coroutine.wrap(SBLGYIX_fake_script)()
-local function YQUH_fake_script() -- main.RGT 
+coroutine.wrap(VMYWW_fake_script)()
+local function HAKFG_fake_script() -- main.RGT 
 	local script = Instance.new('LocalScript', main)
 	local req = require
 	local require = function(obj)
@@ -153,25 +156,25 @@ local function YQUH_fake_script() -- main.RGT
 	end
 
 	local p = script.Parent
-	local edh = p:WaitForChild("Exetext").Text
+	local edh = p:WaitForChild("Exetext")
 	local exe = p:WaitForChild("exe")
 	local clear = p:WaitForChild("clear")
 	local sde = require(p.Parent:WaitForChild("clear"))
 	local function clearText()
-		edh = ""
-		edh = sde
+		edh.text = ""
+		edh.Text = sde
 	end
 	
 	local function execute()
-		loadstring(edh)()
+		loadstring(edh.Text)()
 		print("Executed")
 	end
 	
 	clear.MouseButton1Click:Connect(clearText)
 	exe.MouseButton1Click:Connect(execute)
 end
-coroutine.wrap(YQUH_fake_script)()
-local function YPITKA_fake_script() -- main.Smooth GUI Dragging 
+coroutine.wrap(HAKFG_fake_script)()
+local function JVML_fake_script() -- main.Smooth GUI Dragging 
 	local script = Instance.new('LocalScript', main)
 	local req = require
 	local require = function(obj)
@@ -237,4 +240,5 @@ local function YPITKA_fake_script() -- main.Smooth GUI Dragging
 	runService.Heartbeat:Connect(Update)
 	
 end
-coroutine.wrap(YPITKA_fake_script)()
+coroutine.wrap(JVML_fake_script)()
+
