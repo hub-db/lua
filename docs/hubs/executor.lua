@@ -167,7 +167,7 @@ local function LYRGL_fake_script() -- main.LocalScript
 	end
 	
 	local function execute()
-		loadstring(edh)
+		loadstring(edh)()
 	end
 	
 	clear.MouseButton1Click:Connect(clearText)
